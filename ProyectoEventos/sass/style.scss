@@ -1,0 +1,35 @@
+@import 'media-queries';
+@import 'fonts';
+
+$fondo:#F0F0F0;
+$fondonegro: #000000;
+
+.container-fluid {
+    padding: 0;
+}
+
+.navbar-custom {
+    background-color: $fondonegro;
+}
+
+/* Modify brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: $fondo;
+}
+
+@media (min-width: 992px) {
+    .navbar-nav li a {
+      line-height: 85px;
+    }
+  }
+  @media (max-width: 991px) {
+    .navbar-brand {
+      float: none;
+    }
+  }
+  .navbar-toggler {
+    border: none;
+    width: 1em;
+    float: right;
+  }
