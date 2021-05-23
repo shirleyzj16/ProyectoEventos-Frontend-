@@ -1,35 +1,129 @@
 @import 'media-queries';
 @import 'fonts';
+@import 'utils';
 
-$fondo:#F0F0F0;
+$fondo:#F0F0F0;            /* el color de fondo es el mismo que el de la letra en el header*/
 $fondonegro: #000000;
+$colorBoton:#FF826C;
+$colorAzul:#3196E2;
+$cajaTexto:#E1E1E1;
+$ColorDetalle:#C4C4C4;
+
+
+body{
+    margin: 0;
+    padding: 0;
+    @include set-text('RobotoRegular', 18px, $fondonegro);
+    background-color: $fondo;
+}
 
 .container-fluid {
     padding: 0;
 }
 
+/* header */
+
 .navbar-custom {
     background-color: $fondonegro;
-}
 
-/* Modify brand and text color */
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-    color: $fondo;
-}
-
-@media (min-width: 992px) {
-    .navbar-nav li a {
-      line-height: 85px;
-    }
-  }
-  @media (max-width: 991px) {
     .navbar-brand {
-      float: none;
+        color: $fondo;
     }
-  }
-  .navbar-toggler {
-    border: none;
-    width: 1em;
-    float: right;
-  }
+
+    .navbar-text {
+        color: $fondo;
+    }
+
+    .nav-link {
+        color: $fondo;
+    }
+}
+
+.navbar li {
+    @include respond-to($large-desktop) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.logo {
+    height: 50px;
+    width: 120px;
+    @include respond-to($large-desktop) {
+        padding-left: 15px;
+        
+    }
+    @include respond-to($phone) {
+        padding-left: 5px;
+        
+    }
+  
+}
+
+.nav-bottom{
+
+    ul {
+        float: left;
+        margin: .6em 0 0;
+        padding: 0;
+
+        li {
+            display: inline;
+            font-size: .9em;
+            padding: 1em 0 0 1em;
+
+            a {
+                display: inline-block;
+                color: $fondo;
+                text-decoration: none;
+                
+                @include respond-to($large-desktop) {
+                    padding: 2em 1em 1em 2em;
+                }
+
+                &:hover {
+                    color: $fondo;
+                    text-decoration: none;
+                    transition: all ease .5s;
+                }
+            }
+        }
+    }
+
+
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: $fondo;
+}
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+  
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* header */
+
+
+
+
+
+
+/* footer */
+footer {
+    background-color: $fondonegro;
+    p {
+        background-color: $fondo;
+        height: 2px;
+        @include respond-to($large-desktop) {
+            height: 5px;
+        }
+    }
+}
+
+/* footer */
+
+
+
+
+
