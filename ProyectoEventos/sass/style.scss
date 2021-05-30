@@ -161,9 +161,11 @@ body{
 
 /* searching */
 
+/* iamgen pagina principal*/
 
+/* imagen pagina principal*/
 
-
+/* searching */
 
 /* categorias */
 .info_evento {
@@ -211,7 +213,24 @@ body{
 
 
 
+.relacionados {
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    color: $fondonegro;
+    padding-left: 50px;
+    display: table;
 
+    @include respond-to($large-desktop) {
+        height: 100px;
+        padding-left: 10px;
+    }
+
+    span {
+        display: table-cell;
+        vertical-align: bottom;
+    }
+}
 /* categorias */
 
 
@@ -230,7 +249,76 @@ footer {
 /* footer */
 
 
+/* pagina Detalle evento */
+.header-section{
+    background: $fondonegro;
+    padding: 0.7em;
+    margin: 0;
+    width: 100%;
+}
 
+.form-evento {
+    width: 90%;
 
+    @include respond-to($large-desktop) {
+        width: 35%;
+    }
 
+    div {
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+    }
 
+    .header-div {
+        padding-top: 30px;
+    }
+
+    .total {
+        background-color: $cajaTexto;
+        min-height: 50px;
+        text-align: left;
+    }
+
+    .footer-div {
+        min-height: 100px;
+    }
+}
+
+/* pagina Detalle evento */
+
+.detalle_resumen {
+    width: 95%;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-top: 20px;
+    color: $fondonegro;
+
+    @include respond-to($large-desktop) {
+        padding-left: 10px;
+        padding-top: 50px;
+        width: 60%;
+    }
+
+    h2 {
+        color: $colorAzul;
+        text-align: center;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .footer-div {
+        min-height: 150px;
+    }
+}
+
+.descripcion_resumen {
+    background-color: $ColorDetalle;
+    color: $fondonegro;
+    padding: 5px 5px 5px 5px;
+    min-height: 30px;
+
+    @include respond-to($large-desktop) {
+        min-height: 80px;
+        padding: 10px 10px 10px 10px;
+    }
+}
