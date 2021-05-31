@@ -70,6 +70,7 @@
   font-weight: normal;
   font-style: normal;
 }
+/* colores*/
 /* el color de fondo es el mismo que el de la letra en el header*/
 body {
   margin: 0;
@@ -120,43 +121,17 @@ body {
   }
 }
 
-.nav-bottom ul {
-  float: left;
-  margin: 0.6em 0 0;
-  padding: 0;
-}
-.nav-bottom ul li {
-  display: inline;
-  font-size: 0.9em;
-  padding: 1em 0 0 1em;
-}
-.nav-bottom ul li a {
-  display: inline-block;
-  color: #F0F0F0;
-  text-decoration: none;
-}
-@media only screen and (min-width: 1200px) {
-  .nav-bottom ul li a {
-    padding: 2em 1em 1em 2em;
-  }
-}
-.nav-bottom ul li a:hover {
-  color: #F0F0F0;
-  text-decoration: none;
-  transition: all ease 0.5s;
-}
-
 .custom-toggler.navbar-toggler {
   border-color: #F0F0F0;
 }
 
 /* Setting the stroke to green using rgb values (0, 128, 0) */
+/* se cambio el color a fondo */
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-/* header */
-/* searching */
+/* desplegable categoria */
 /* Dropdown Button */
 .dropbtn {
   background-color: #F0F0F0;
@@ -206,17 +181,12 @@ body {
   background-color: #3196E2;
 }
 
-/* searching */
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
   background-color: #FF826C !important;
   border-color: #FF826C !important;
 }
 
-/* searching */
-/* iamgen pagina principal*/
-/* imagen pagina principal*/
-/* searching */
-/* categorias */
+/* eventos */
 .info_evento {
   background-color: #C4C4C4;
   color: #000000;
@@ -233,6 +203,7 @@ body {
 
 .detalle_evento {
   width: 90%;
+  /* en phone*/
   padding-left: 50px;
   padding-top: 20px;
   color: #000000;
@@ -251,7 +222,9 @@ body {
   background-color: #C4C4C4;
   color: #000000;
   padding: 5px 5px 5px 5px;
+  /* en phone*/
   min-height: 50px;
+  /* en phone*/
 }
 @media only screen and (min-width: 1200px) {
   .descripcion_evento {
@@ -264,8 +237,10 @@ body {
   font-weight: bold;
   width: 100%;
   height: 50px;
+  /* en phone*/
   color: #000000;
   padding-left: 50px;
+  /* en phone*/
   display: table;
 }
 @media only screen and (min-width: 1200px) {
@@ -279,7 +254,6 @@ body {
   vertical-align: bottom;
 }
 
-/* categorias */
 /* footer */
 footer {
   background-color: #000000;
@@ -294,8 +268,34 @@ footer p {
   }
 }
 
+.nav-bottom ul {
+  float: left;
+  margin: 0.6em 0 0;
+  padding: 0;
+}
+.nav-bottom ul li {
+  display: inline;
+  font-size: 0.9em;
+  padding: 1em 0 0 1em;
+}
+.nav-bottom ul li a {
+  display: inline-block;
+  color: #F0F0F0;
+  text-decoration: none;
+}
+@media only screen and (min-width: 1200px) {
+  .nav-bottom ul li a {
+    padding: 2em 1em 1em 2em;
+  }
+}
+.nav-bottom ul li a:hover {
+  color: #F0F0F0;
+  text-decoration: none;
+  transition: all ease 0.5s;
+}
+
 /* footer */
-/* pagina Detalle evento */
+/* registro evento y concluir evento usan variables iguales al ser ambos forms*/
 .header-section {
   background: #000000;
   padding: 0.7em;
@@ -305,6 +305,7 @@ footer p {
 
 .form-evento {
   width: 90%;
+  /*para phone*/
 }
 @media only screen and (min-width: 1200px) {
   .form-evento {
@@ -327,12 +328,15 @@ footer p {
   min-height: 100px;
 }
 
-/* pagina Detalle evento */
+/* resumen reservacion */
 .detalle_resumen {
   width: 95%;
+  /* en phone*/
   margin: 0 auto;
   padding-left: 10px;
+  /* en phone*/
   padding-top: 20px;
+  /* en phone*/
   color: #000000;
 }
 @media only screen and (min-width: 1200px) {
@@ -356,7 +360,9 @@ footer p {
   background-color: #C4C4C4;
   color: #000000;
   padding: 5px 5px 5px 5px;
+  /* en phone*/
   min-height: 30px;
+  /* en phone*/
 }
 @media only screen and (min-width: 1200px) {
   .descripcion_resumen {

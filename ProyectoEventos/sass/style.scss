@@ -2,6 +2,7 @@
 @import 'fonts';
 @import 'utils';
 
+/* colores*/
 $fondo:#F0F0F0;            /* el color de fondo es el mismo que el de la letra en el header*/
 $fondonegro: #000000;
 $colorBoton:#FF826C;
@@ -60,52 +61,21 @@ body{
   
 }
 
-.nav-bottom{
-
-    ul {
-        float: left;
-        margin: .6em 0 0;
-        padding: 0;
-
-        li {
-            display: inline;
-            font-size: .9em;
-            padding: 1em 0 0 1em;
-
-            a {
-                display: inline-block;
-                color: $fondo;
-                text-decoration: none;
-                
-                @include respond-to($large-desktop) {
-                    padding: 2em 1em 1em 2em;
-                }
-
-                &:hover {
-                    color: $fondo;
-                    text-decoration: none;
-                    transition: all ease .5s;
-                }
-            }
-        }
-    }
-
-
-}
 
 .custom-toggler.navbar-toggler {
     border-color: $fondo;
 }
-/* Setting the stroke to green using rgb values (0, 128, 0) */
-  
+/* Setting the stroke to green using rgb values (0, 128, 0) */ 
+/* se cambio el color a fondo */
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-/* header */
 
-/* searching */
-/* Dropdown Button */
+
+/* desplegable categoria */
+
+   /* Dropdown Button */
 .dropbtn {
     background-color: $fondo;
     color: $fondonegro;
@@ -153,21 +123,14 @@ body{
     background-color: $colorAzul;
 }
 
-/* searching */
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: $colorBoton !important;
     border-color: $colorBoton !important ;
 }
 
-/* searching */
 
-/* iamgen pagina principal*/
 
-/* imagen pagina principal*/
-
-/* searching */
-
-/* categorias */
+/* eventos */
 .info_evento {
     background-color: $ColorDetalle;
     color: $fondonegro;
@@ -184,7 +147,7 @@ body{
 }
 
 .detalle_evento {
-    width: 90%;
+    width: 90%;    /* en phone*/
     padding-left: 50px;
     padding-top: 20px;
     color: $fondonegro;
@@ -202,8 +165,8 @@ body{
 .descripcion_evento {
     background-color: $ColorDetalle;
     color: $fondonegro;
-    padding: 5px 5px 5px 5px;
-    min-height: 50px;
+    padding: 5px 5px 5px 5px;    /* en phone*/
+    min-height: 50px;           /* en phone*/
 
     @include respond-to($large-desktop) {
         min-height: 150px;
@@ -211,14 +174,12 @@ body{
     }
 }
 
-
-
 .relacionados {
     font-weight: bold;
     width: 100%;
-    height: 50px;
+    height: 50px;              /* en phone*/
     color: $fondonegro;
-    padding-left: 50px;
+    padding-left: 50px;          /* en phone*/
     display: table;
 
     @include respond-to($large-desktop) {
@@ -231,7 +192,7 @@ body{
         vertical-align: bottom;
     }
 }
-/* categorias */
+
 
 
 /* footer */
@@ -246,10 +207,44 @@ footer {
     }
 }
 
+.nav-bottom{
+
+    ul {
+        float: left;
+        margin: .6em 0 0;
+        padding: 0;
+
+        li {
+            display: inline;
+            font-size: .9em;
+            padding: 1em 0 0 1em;
+
+            a {
+                display: inline-block;
+                color: $fondo;
+                text-decoration: none;
+                
+                @include respond-to($large-desktop) {
+                    padding: 2em 1em 1em 2em;
+                }
+
+                &:hover {
+                    color: $fondo;
+                    text-decoration: none;
+                    transition: all ease .5s;
+                }
+            }
+        }
+    }
+
+
+}
+
 /* footer */
 
 
-/* pagina Detalle evento */
+/* registro evento y concluir evento usan variables iguales al ser ambos forms*/
+
 .header-section{
     background: $fondonegro;
     padding: 0.7em;
@@ -258,7 +253,7 @@ footer {
 }
 
 .form-evento {
-    width: 90%;
+    width: 90%;  /*para phone*/
 
     @include respond-to($large-desktop) {
         width: 35%;
@@ -284,13 +279,13 @@ footer {
     }
 }
 
-/* pagina Detalle evento */
+/* resumen reservacion */
 
 .detalle_resumen {
-    width: 95%;
+    width: 95%;              /* en phone*/
     margin: 0 auto;
-    padding-left: 10px;
-    padding-top: 20px;
+    padding-left: 10px;          /* en phone*/
+    padding-top: 20px;             /* en phone*/
     color: $fondonegro;
 
     @include respond-to($large-desktop) {
@@ -314,8 +309,8 @@ footer {
 .descripcion_resumen {
     background-color: $ColorDetalle;
     color: $fondonegro;
-    padding: 5px 5px 5px 5px;
-    min-height: 30px;
+    padding: 5px 5px 5px 5px;           /* en phone*/
+    min-height: 30px;                   /* en phone*/
 
     @include respond-to($large-desktop) {
         min-height: 80px;
