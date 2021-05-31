@@ -331,12 +331,12 @@ footer p {
 /* resumen reservacion */
 .detalle_resumen {
   width: 95%;
-  /* en phone*/
+  /*para phone*/
   margin: 0 auto;
   padding-left: 10px;
-  /* en phone*/
+  /*para phone*/
   padding-top: 20px;
-  /* en phone*/
+  /*para phone*/
   color: #000000;
 }
 @media only screen and (min-width: 1200px) {

@@ -177,9 +177,9 @@ body{
 .relacionados {
     font-weight: bold;
     width: 100%;
-    height: 50px;              /* en phone*/
+    height: 50px;             /* en phone*/
     color: $fondonegro;
-    padding-left: 50px;          /* en phone*/
+    padding-left: 50px;         /* en phone*/
     display: table;
 
     @include respond-to($large-desktop) {
@@ -282,10 +282,10 @@ footer {
 /* resumen reservacion */
 
 .detalle_resumen {
-    width: 95%;              /* en phone*/
+    width: 95%;              /*para phone*/
     margin: 0 auto;
-    padding-left: 10px;          /* en phone*/
-    padding-top: 20px;             /* en phone*/
+    padding-left: 10px;         /*para phone*/
+    padding-top: 20px;             /*para phone*/
     color: $fondonegro;
 
     @include respond-to($large-desktop) {
